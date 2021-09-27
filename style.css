@@ -153,14 +153,99 @@ button.pledges-submit {
   text-transform: uppercase;
 }
 
+.gallery {
+  padding:0 0.5rem;
+  text-align: center;
+  height: 25rem;
+}
+
+.gallery > span {
+  width:2.5rem;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.gallery > span::before {
+   content:'';
+   display:block;
+   height:1.5rem;
+   width:1.5rem;
+   border-radius:10%;
+   border:0.35rem solid#8d97ad;
+   border-width: 0.35rem 0.35rem 0 0;
+}
+
+.gallery > span:hover::before {
+  border-color: #29af8a;
+}
+
+.gallery > span:first-of-type::before {
+  transform: rotate(-135deg);
+}
+
+.gallery > span:last-of-type::before {
+  transform: rotate(45deg);
+}
+
+.slides {
+  vertical-align: middle;
+  display: inline-flex;
+  max-width:calc(100% - 6rem);
+  flex-wrap:wrap;
+  justify-content: space-around;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.slides > div {
+  position: relative;
+  font-size: 0;
+}
+
+.slides > div::after {
+  content:'';
+  position: absolute;
+  bottom:0;
+  left:0;
+  height:60%;
+  width:100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.9) 100%);
+}
+
+.slides > div > div {
+  left:0;
+  bottom:0;
+  width:100%;
+  z-index: 1;
+  position: absolute;
+}
+
+
+.slides > div > div > h3 {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font:400 27px "Playfair Display",serif;
+}
+
+.slides > div > div > p {
+  color: white;
+  margin: 1.375rem 2rem 3.625rem;
+}
+
+.gallery img {
+  width:18rem;
+  height: auto;
+}
+
 
 
 @media screen and (max-width: 750px) {
-  .header-image, .header- img{
-    
-  }
-
-  .header-image::after {
-
+  body {
+    font-size:0.8;
   }
 }
