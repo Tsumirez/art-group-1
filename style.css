@@ -251,7 +251,7 @@ button.pledges-submit {
 }
 
 footer {
-  padding:0 5%;
+  padding:2.5rem 5% 0;
 }
 
 footer ul {
@@ -273,9 +273,3 @@ ul.footer-links>li:nth-of-type(4){
     font-size: 80%;
   }
 }
-
-/* @media screen and (max-width: 400px) {
-  html {
-    font-size:60%;
-  }
-} */
