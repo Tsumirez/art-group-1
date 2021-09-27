@@ -38,7 +38,6 @@ a {
 .intro-text {
   max-width: 41.76rem;
   min-width: 19rem;
-  flex-shrink: 1;
 }
 
 .large-print {
@@ -52,7 +51,7 @@ a {
   align-self: flex-end;
   position: relative;
   max-width: 67%;
-  margin-right: 6.927%;
+  margin:0 6.927% 3rem 0;
 }
 
 .header-image > img {
@@ -73,10 +72,11 @@ a {
 }
 
 article {
-  background: #f5f7fa url('garnek.svg') left 10rem bottom -10rem/23.375rem auto no-repeat ;
-  padding: 4.625rem 0 11.4375rem;
-  margin-top: 13.75rem;
   text-align: center;
+  margin-top: 13.75rem;
+  padding: 4.625rem 0 11.4375rem;
+  background: #f5f7fa url('garnek.svg') left 10rem bottom -10rem/23.375rem auto no-repeat ;
+
 }
 
 article > .donate-header {
